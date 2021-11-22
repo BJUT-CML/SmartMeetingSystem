@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <title>index_admin</title>
+    <link rel="stylesheet" href="css/index_admin.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+</head>
+<body>
+<!--首页头部部分-->
+<header>
+    <!--头部logo图片-->
+    <img src="img/logo.jpg" />
+    <!--SmartMeeting会议管理系统显示区域-->
+    <span style="line-height:44px;font-size:18px;color:#3BC5BB;">SmartMeeting</span>
+    <span style="line-height:44px;font-size:18px;color:#FF9A4C;">会议管理系统</span>
+
+    <!--头部右侧区域-->
+    <div class="headerRight">
+        <span>欢迎您，</span>
+        <span id="loginName">用户名字</span>
+        <img style="margin-left:20px;" src="" />
+        <!--展现当前系统时间区域-->
+        <span id="nowTime">yyyy/mm/dd&nbsp;&nbsp;&nbsp;&nbsp;00:00:00星期零</span>
+        &nbsp;
+        <button id="btnChangePassword" class="btn btn-primary">修改密码</button>
+        <button id="logout" class="btn btn-primary">注销登录</button>
+    </div>
+</header>
+
+<!--首页主体部分-->
+<div class="container-fluid">
+    <div class="row">
+        <!--导航栏-->
+        <ul class="menu col-2 left">
+            <li>
+                <a href="#">个人通知</a>
+                <ul class="sub-menu">
+                    <li><a href="#">最新通知</a></li>
+                    <li><a href="#">我的预定</a></li>
+                    <li><a href="#">我的会议</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">人员管理</a>
+                <ul class="sub-menu">
+                    <li><a href="#">部门管理</a></li>
+                    <li><a href="#">员工注册</a></li>
+                    <li><a href="#">注册审批</a></li>
+                    <li><a href="#">搜索员工</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">会议预定</a>
+                <ul class="sub-menu">
+                    <li><a href="#">添加会议室</a></li>
+                    <li><a href="#">查看会议室</a></li>
+                    <li><a href="#">预定会议</a></li>
+                    <li><a href="#">搜索会议</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="col-md-10" style="padding:0;">
+            <iframe width="100%" height="700px" style="border: none;" id="myFrame" name="myFrame">
+
+            </iframe>
+        </div>
+    </div>
+</div>
+
+<!--弹出框-->
+<footer>
+    <div class="modal fade" id="changePasswordModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">修改密码</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="input_primary_password" class="form-label">请输入旧密码:</label>
+                        <input class="form-control" id="input_primary_password" type="password">
+                    </div>
+                    <div class="mb-3">
+                        <label for="input_new_password" class="form-label">请输入新密码:</label>
+                        <input class="form-control" id="input_new_password" type="password">
+                    </div>
+                    <div class="mb-3">
+                        <label for="input_new_password_confirm" class="form-label">请确认新密码:</label>
+                        <input class="form-control" id="input_new_password_confirm" type="password">
+                    </div>
+                    <div>注意:新密码必须由6-20位数字、字母或下划线组成</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary" id="btn_confirm_change_password">确认更改</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+<script src="js/jquery-3.6.0.js" ></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/common.js" ></script>
+<script src="js/index_admin.js" ></script>
+</html>

@@ -1,0 +1,61 @@
+*{
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	cursor:pointer;  /*当鼠标悬浮到a标签上时，显示小手图标*/
+}
+body{
+	overflow: hidden;
+}
+header{
+	height: 44px;
+	background-color: #35404D;
+}
+.headerRight{
+	float: right;
+	width: 550px;
+	height: 100%;
+	color: #f1f1f1;
+	line-height: 44px;
+	font-size: 14px;
+}
+.left {
+    height: 700px;
+    background: #2A3542;
+}
+.menu{
+	margin-top: 20px;
+}
+.menu li{
+	margin-top: 10px;
+	list-style: none;
+	height: 30px;
+	width:100%;
+	line-height: 30px;
+	text-align: left;
+	color:#cccccc;
+}
+.menu a{
+	text-decoration: none;
+}
+.menu>li:hover{
+	background-color: #3BC5BB;
+}
+.menu li:hover>a{
+	color:white;
+}
+.menu>li>a{
+	color:#cccccc;
+	margin-left: 35px;
+}
+.sub-menu{
+	display: none;
+}
+.sub-menu a{
+	color:#cccccc;
+	margin-left: 20px;
+}

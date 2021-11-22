@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="container col-3">
+
+        <div class="row g-2 mb-3">
+            <span id="title-en" class="col-6 text-end">Smart Meeting</span>
+            <span id="title-ch" class="col-6 text-start">会议管理系统</span>
+        </div>
+
+        <div class="row g-2 mb-2">
+            <div class="col-2">
+                <img src="img/用户.png">
+            </div>
+            <div class="col-10">
+                <input id="input-username" type="text" class="form-control" placeholder="请输入用户名">
+            </div>
+        </div>
+
+        <div class="row g-2 mb-2">
+            <div class="col-2">
+                <img src="img/密码.png">
+            </div>
+            <div class="col-10">
+                <input id="input-password" type="password" class="form-control" placeholder="请输入用户名">
+            </div>
+        </div>
+
+        <div class="row g-3 mb-2">
+            <div class="col-2"></div>
+            <div class="col-auto">
+                <input id="check-box-remember-login" type="checkbox">
+            </div>
+            <div class="col-auto">
+               记住我
+            </div>
+        </div>
+
+        <div class="row g-2 mb-0">
+            <div class="col-6">
+                <button id="login_button" class="btn btn-primary col-12">
+                    登录
+                </button>
+            </div>
+            <div class="col-6">
+                <button id="register_button" class="btn btn-primary col-12">
+                    注册
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery-3.6.0.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/import_users_info.js"></script>
+<script src="js/login.js"></script>
+</html>
